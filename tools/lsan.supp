@@ -1,0 +1,15 @@
+# Supressoes do LeakSanitizer.
+#
+# Os blocos abaixo sao alocados dentro da propria SDL e do driver grafico
+# (Mesa/EGL/X11) e permanecem vivos ate o fim do processo. Comprovado com um
+# programa minimo contendo apenas SDL_Init + SDL_CreateWindowAndRenderer +
+# SDL_Quit, sem nenhuma linha do codigo do projeto: ele retem exatamente os
+# mesmos blocos.
+#
+# Uso: ASAN_OPTIONS=suppressions=tools/lsan.supp ./imgproc <imagem>
+leak:libSDL3.so
+leak:libEGL
+leak:libGLX
+leak:libX11
+leak:libxcb
+leak:_dri.so
