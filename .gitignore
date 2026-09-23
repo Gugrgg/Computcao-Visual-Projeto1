@@ -1,0 +1,29 @@
+# Arquivos intermediarios de compilacao
+build/
+.toolchain/
+entrega-por-integrante/
+*.o
+*.d
+
+# Executaveis
+imgproc
+imgproc.exe
+test_processing
+test_proc
+imgproc_asan
+*.exe
+*.out
+
+# Bibliotecas copiadas para junto do executavel (Windows)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Saida gerada pelo programa
+output_image.png
+
+# Editores / SO
+.vscode/settings.json
+.DS_Store
+Thumbs.db
