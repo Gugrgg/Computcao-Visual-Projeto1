@@ -1,0 +1,13 @@
+# Normaliza o fim de linha no repositorio (LF), evitando conflitos entre
+# integrantes que usam Windows e Linux.
+* text=auto
+
+*.c   text diff=cpp
+*.h   text diff=cpp
+*.md  text
+Makefile text
+
+# Binarios nao devem sofrer conversao
+*.ttf binary
+*.png binary
+*.jpg binary
