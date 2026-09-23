@@ -1,0 +1,25 @@
+{
+  "configurations": [
+    {
+      "name": "Windows (MinGW)",
+      "includePath": [
+        "${workspaceFolder}/src",
+        "${env:SDL_DIR}/include",
+        "d:/dev/compvis/libs/SDL3/include"
+      ],
+      "defines": ["_DEBUG", "UNICODE", "_UNICODE"],
+      "compilerPath": "C:/msys64/ucrt64/bin/gcc.exe",
+      "cStandard": "c17",
+      "intelliSenseMode": "windows-gcc-x64"
+    },
+    {
+      "name": "Linux / WSL",
+      "includePath": ["${workspaceFolder}/src", "/usr/local/include", "/usr/include"],
+      "defines": ["_DEBUG"],
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "c17",
+      "intelliSenseMode": "linux-gcc-x64"
+    }
+  ],
+  "version": 4
+}
